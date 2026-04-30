@@ -1,0 +1,2 @@
+# kazumashugen
+My anime blog
