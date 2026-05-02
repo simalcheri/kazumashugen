@@ -1,0 +1,4 @@
+/* Navbar transparent on home page only */
+.navbar-content.has-home-banner {
+  background: transparent !important;
+}
