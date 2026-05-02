@@ -5,9 +5,9 @@
   -webkit-backdrop-filter: none !important;
 }
 
-/* ── All navbar text + icons white on home page ── */
+/* ── All navbar text + icons + title white on home page ── */
 .navbar-container:has(.has-home-banner) .navbar-content .left a,
-.navbar-container:has(.has-home-banner) .navbar-content .left .site-title,
+.navbar-container:has(.has-home-banner) .navbar-content .left .logo-title,
 .navbar-container:has(.has-home-banner) .navbar-content .right .navbar-list .navbar-item a,
 .navbar-container:has(.has-home-banner) .navbar-content .right .navbar-list .navbar-item span,
 .navbar-container:has(.has-home-banner) .navbar-content .right .navbar-list .navbar-item i,
