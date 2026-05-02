@@ -5,18 +5,24 @@
   -webkit-backdrop-filter: none !important;
 }
 
-/* ── All navbar text + icons + title white on home page ── */
-.navbar-container:has(.has-home-banner) .navbar-content .left a,
-.navbar-container:has(.has-home-banner) .navbar-content .left .logo-title,
+/* ── All navbar text + icons white on home page ── */
 .navbar-container:has(.has-home-banner) .navbar-content .right .navbar-list .navbar-item a,
 .navbar-container:has(.has-home-banner) .navbar-content .right .navbar-list .navbar-item span,
 .navbar-container:has(.has-home-banner) .navbar-content .right .navbar-list .navbar-item i,
-.navbar-container:has(.has-home-banner) .navbar-content .left i,
-.navbar-container:has(.has-home-banner) .navbar-content .left svg,
 .navbar-container:has(.has-home-banner) .navbar-content .right .navbar-list .navbar-item svg {
   color: #ffffff !important;
   fill: #ffffff !important;
   text-shadow: 0 1px 4px rgba(0,0,0,0.6);
+}
+
+/* ── Site title "Kazuma Shugen" — override --first-text-color ── */
+.navbar-container:has(.has-home-banner) .logo-title,
+.navbar-container:has(.has-home-banner) .logo-title h1,
+.navbar-container:has(.has-home-banner) .logo-title a,
+.navbar-container:has(.has-home-banner) a.logo-title {
+  color: #ffffff !important;
+  --first-text-color: #ffffff !important;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.7);
 }
 
 /* ── Active underline bar ── */
