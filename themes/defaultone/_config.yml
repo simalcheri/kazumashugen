@@ -87,8 +87,8 @@ home_banner:
   enable: true
   style: fixed
   image: 
-    light: /assets/banner.png
-    dark: /assets/banner.png
+    light: https://i.postimg.cc/cHZ9VBVc/banner.png
+    dark: https://i.postimg.cc/cHZ9VBVc/banner.png
   title: Kazuma Shugen
   subtitle:
     text: ['Media about anime and manga for otaku from all over the world!', 'Anime • Manga • Light Novels']
