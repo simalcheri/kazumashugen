@@ -287,9 +287,9 @@ footer:
 
 # INJECT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 inject:
-  enable: false
+  enable: true
   head:
-    -
+    - <style>.navbar-content.has-home-banner { background: transparent !important; }</style>
     -
   footer:
     -
