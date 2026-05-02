@@ -1,7 +1,27 @@
-/* Navbar transparent on home page only */
-.has-home-banner.transition-navbar,
+/* ── Navbar transparent on home page ── */
 .navbar-container:has(.has-home-banner) {
   background: transparent !important;
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
+}
+
+/* ── Navbar text white & visible on home page ── */
+.navbar-container:has(.has-home-banner) .navbar-content .left a,
+.navbar-container:has(.has-home-banner) .navbar-content .right .navbar-list .navbar-item a,
+.navbar-container:has(.has-home-banner) .navbar-content .right .navbar-list .navbar-item,
+.navbar-container:has(.has-home-banner) .navbar-content .right .navbar-list .navbar-item span {
+  color: #ffffff !important;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.6);
+}
+
+/* Site title "Kazuma Shugen" */
+.navbar-container:has(.has-home-banner) .navbar-content .left .site-title,
+.navbar-container:has(.has-home-banner) .navbar-content .left a {
+  color: #ffffff !important;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.7);
+}
+
+/* Navbar bar underline (active item) keep visible */
+.navbar-container:has(.has-home-banner) .navbar-bar-middle {
+  background: #ffffff !important;
 }
