@@ -287,12 +287,12 @@ footer:
 
 # INJECT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 inject:
-  enable: true
+  enable: false
   head:
-    - <style>* { cursor: url('https://i.postimg.cc/C56Vh2gG/cursor-pen.jpg') 2 30, auto; }</style>
+    -
     -
   footer:
-    - <script src="/assets/cursor.js"></script>
+    -
     -
 # INJECT <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
