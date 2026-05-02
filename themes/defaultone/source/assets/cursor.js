@@ -2,14 +2,12 @@
   const kanji = ['愛','夢','花','風','月','星','空','海','心','魂','桜','光','水','火','雪','力','美','詩','歌','道'];
   const particles = [];
 
-  // ── 1. Hide default cursor ─────────────────────────────────────────────────
   const hideStyle = document.createElement('style');
   hideStyle.textContent = '*, *::before, *::after { cursor: none !important; }';
   document.head.appendChild(hideStyle);
 
-  // ── 2. Tilted fountain pen SVG (40° like a natural arrow) ─────────────────
   const penSVG = `<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
-  <g transform="translate(28,28) rotate(40) translate(-6,-5)">
+  <g transform="translate(28,28) rotate(-40) translate(-6,-5)">
     <rect x="-6" y="-28" width="12" height="28" rx="3.5" fill="#1a1a2e" stroke="#c8a96e" stroke-width="0.8"/>
     <rect x="-4" y="-26" width="3" height="20" rx="1.5" fill="#ffffff" opacity="0.1"/>
     <rect x="4" y="-27" width="2" height="20" rx="1" fill="#ffd700"/>
@@ -25,10 +23,9 @@
   const encoded = 'data:image/svg+xml;base64,' + btoa(unescape(encodeURIComponent(penSVG)));
 
   const cursorStyle = document.createElement('style');
-  cursorStyle.textContent = `html, body, * { cursor: url("${encoded}") 8 48, none !important; }`;
+  cursorStyle.textContent = `html, body, * { cursor: url("${encoded}") 8 8, none !important; }`;
   document.head.appendChild(cursorStyle);
 
-  // ── 3. Kanji particles canvas ──────────────────────────────────────────────
   const canvas = document.createElement('canvas');
   canvas.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;z-index:9999;pointer-events:none;';
   document.body.appendChild(canvas);
